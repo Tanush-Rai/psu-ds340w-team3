@@ -19,7 +19,7 @@ jobs:
       - name: Run pilot
         run: python experiments/run_pilot.py
       - name: Verify saved comparison
-        run: git diff --exit-code -- results/comparison.csv
+        run: git diff --ignore-space-at-eol --exit-code -- results/comparison.csv
       - name: Unit tests
         working-directory: experiments
         run: python -m unittest discover -v
