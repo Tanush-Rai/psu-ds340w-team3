@@ -1,0 +1,9 @@
+variant,runs,accepted_accuracy_pct,unflagged_error_pct,flagged_pct,avg_edits
+A baseline,15,6.67,93.33,0.0,0.0
+B trim only,15,46.67,53.33,0.0,3.87
+C numeric only,15,20.0,80.0,0.0,5.53
+D clean both,15,100.0,0.0,0.0,9.4
+E check only,15,6.67,0.0,93.33,0.0
+F clean + check,15,100.0,0.0,0.0,9.4
+G check + repair,15,100.0,0.0,0.0,8.87
+H clean + check + repair,15,100.0,0.0,0.0,9.4
