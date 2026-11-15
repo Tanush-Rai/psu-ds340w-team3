@@ -1,0 +1,30 @@
+name: Run controlled reliability pilot
+
+on:
+  push:
+    paths:
+      - "experiments/**"
+      - "results/comparison.csv"
+      - ".github/workflows/controlled-pilot.yml"
+  workflow_dispatch:
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run pilot
+        run: python experiments/run_pilot.py
+      - name: Verify saved comparison
+        run: git diff --exit-code -- results/comparison.csv
+      - name: Unit tests
+        working-directory: experiments
+        run: python -m unittest discover -v
+      - name: Save outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-pilot-results
+          path: results/
