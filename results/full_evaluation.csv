@@ -1,0 +1,25 @@
+split,variant,n_tasks,accepted_correct,accepted_accuracy_pct,unflagged_errors,unflagged_error_pct,flagged,flagged_pct,mean_cell_edits
+dev,A baseline,5,0,0.0,5,100.0,0,0.0,0.0
+dev,B trim only,5,2,40.0,3,60.0,0,0.0,5.2
+dev,C numeric only,5,0,0.0,5,100.0,0,0.0,5.8
+dev,D clean both,5,5,100.0,0,0.0,0,0.0,11.0
+dev,E check only,5,0,0.0,0,0.0,5,100.0,0.0
+dev,F clean + check,5,5,100.0,0,0.0,0,0.0,11.0
+dev,G check + repair,5,5,100.0,0,0.0,0,0.0,11.0
+dev,H clean + check + repair,5,5,100.0,0,0.0,0,0.0,11.0
+test,A baseline,15,1,6.67,14,93.33,0,0.0,0.0
+test,B trim only,15,7,46.67,8,53.33,0,0.0,3.87
+test,C numeric only,15,3,20.0,12,80.0,0,0.0,5.53
+test,D clean both,15,15,100.0,0,0.0,0,0.0,9.4
+test,E check only,15,1,6.67,0,0.0,14,93.33,0.0
+test,F clean + check,15,15,100.0,0,0.0,0,0.0,9.4
+test,G check + repair,15,15,100.0,0,0.0,0,0.0,8.87
+test,H clean + check + repair,15,15,100.0,0,0.0,0,0.0,9.4
+all,A baseline,20,1,5.0,19,95.0,0,0.0,0.0
+all,B trim only,20,9,45.0,11,55.0,0,0.0,4.2
+all,C numeric only,20,3,15.0,17,85.0,0,0.0,5.6
+all,D clean both,20,20,100.0,0,0.0,0,0.0,9.8
+all,E check only,20,1,5.0,0,0.0,19,95.0,0.0
+all,F clean + check,20,20,100.0,0,0.0,0,0.0,9.8
+all,G check + repair,20,20,100.0,0,0.0,0,0.0,9.4
+all,H clean + check + repair,20,20,100.0,0,0.0,0,0.0,9.8
