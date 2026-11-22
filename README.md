@@ -1,3 +1,54 @@
+# DS 340W Team 3 - Data cleaning and result checking
+
+**Team:** Miftaj Chowdhury, Jackson Shinsky, Tanush Rai
+
+Our current experiment studies how simple cleaning and independent result checking affect tabular calculations. The parent paper is [DSBench](https://arxiv.org/abs/2409.07703), but the new experiments use **synthetic data and a rule-based analyst**, not the original DSBench agent tasks. The original DSBench saved-result verification from our earlier assignment is still available below.
+
+## Final evaluation (Week 13)
+
+The project now includes all 20 deterministic tasks, each evaluated with eight variants (160 experiment runs), along with complete source data and task-level predictions. There are five development tasks and 15 test tasks.
+
+| Condition | Development correct | Test correct | All correct |
+| --- | ---: | ---: | ---: |
+| Baseline | 0/5 | 1/15 | 1/20 |
+| Trim category spaces | 2/5 | 7/15 | 9/20 |
+| Clean number formatting | 0/5 | 3/15 | 3/20 |
+| Both cleaning methods | 5/5 | 15/15 | 20/20 |
+| Checking only | 0/5 | 1/15 | 1/20 |
+| Cleaning + checking | 5/5 | 15/15 | 20/20 |
+| Checking + repair | 5/5 | 15/15 | 20/20 |
+| Cleaning + checking + repair | 5/5 | 15/15 | 20/20 |
+
+Checking without repair flagged 19/20 answers; it prevented incorrect unflagged output in this toy setting but did not increase accepted correct answers. The improvement from cleaning is limited to formatting problems deliberately introduced in the synthetic dataset. None of these numbers should be presented as a gain over the published DSBench agent accuracy.
+
+## Running the code
+
+From the repository's main folder:
+
+```powershell
+python experiments/run_pilot.py
+python experiments/final_evaluation.py
+cd experiments
+python -m unittest discover -v
+```
+
+The scripts use only Python's standard library. GitHub Actions runs the scripts and tests on every relevant update.
+
+## Dataset, scripts, and results
+
+- [Complete dataset: 240 raw rows across 20 tasks](results/synthetic_rows_240.csv)
+- [All 160 per-task predictions and flags](results/full_task_predictions.csv)
+- [Full 20-task and development/test comparison table](results/full_evaluation.csv)
+- [Complete evaluation script](experiments/final_evaluation.py)
+- [Pilot methods and tests](experiments/README.md)
+- [Original DSBench saved-result verification](team3_work/README.md)
+
+**Dataset details:** Each row contains task ID, split, operation (total/mean/count), target region, source row number, raw region, raw sales string and expected task answer. The generator is deterministic and stored in `experiments/run_pilot.py`. The original DSBench dataset was not used for this new-technique evaluation.
+
+---
+
+## Earlier assignment: original DSBench saved-result verification
+
 # DSBench Kaltura Demo
 
 This folder is a small, repeatable demo of the official DSBench evaluation code. It uses the authors' unchanged `data_modeling/show_result.py` file and the saved experiment results included in the official repository. It does not require an API key or a large dataset download.
