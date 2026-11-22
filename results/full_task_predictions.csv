@@ -1,0 +1,161 @@
+task,split,variant,answer,expected,correct,flagged,accepted_correct,unflagged_error,edits
+T01,dev,A baseline,,4922,False,False,False,True,0
+T01,dev,B trim only,,4922,False,False,False,True,5
+T01,dev,C numeric only,3648.0,4922,False,False,False,True,7
+T01,dev,D clean both,4922.0,4922,True,False,True,False,12
+T01,dev,E check only,,4922,False,True,False,False,0
+T01,dev,F clean + check,4922.0,4922,True,False,True,False,12
+T01,dev,G check + repair,4922.0,4922,True,False,True,False,12
+T01,dev,H clean + check + repair,4922.0,4922,True,False,True,False,12
+T02,dev,A baseline,1427.0,1296.5,False,False,False,True,0
+T02,dev,B trim only,1296.5,1296.5,True,False,True,False,3
+T02,dev,C numeric only,1383.5,1296.5,False,False,False,True,3
+T02,dev,D clean both,1296.5,1296.5,True,False,True,False,6
+T02,dev,E check only,1427.0,1296.5,False,True,False,False,0
+T02,dev,F clean + check,1296.5,1296.5,True,False,True,False,6
+T02,dev,G check + repair,1296.5,1296.5,True,False,True,False,6
+T02,dev,H clean + check + repair,1296.5,1296.5,True,False,True,False,6
+T03,dev,A baseline,2,4,False,False,False,True,0
+T03,dev,B trim only,4,4,True,False,True,False,5
+T03,dev,C numeric only,2,4,False,False,False,True,8
+T03,dev,D clean both,4,4,True,False,True,False,13
+T03,dev,E check only,2,4,False,True,False,False,0
+T03,dev,F clean + check,4,4,True,False,True,False,13
+T03,dev,G check + repair,4,4,True,False,True,False,13
+T03,dev,H clean + check + repair,4,4,True,False,True,False,13
+T04,dev,A baseline,,5366,False,False,False,True,0
+T04,dev,B trim only,2596.0,5366,False,False,False,True,9
+T04,dev,C numeric only,,5366,False,False,False,True,6
+T04,dev,D clean both,5366.0,5366,True,False,True,False,15
+T04,dev,E check only,,5366,False,True,False,False,0
+T04,dev,F clean + check,5366.0,5366,True,False,True,False,15
+T04,dev,G check + repair,5366.0,5366,True,False,True,False,15
+T04,dev,H clean + check + repair,5366.0,5366,True,False,True,False,15
+T05,dev,A baseline,1364.0,1407.5,False,False,False,True,0
+T05,dev,B trim only,1364.0,1407.5,False,False,False,True,4
+T05,dev,C numeric only,1422.0,1407.5,False,False,False,True,5
+T05,dev,D clean both,1407.5,1407.5,True,False,True,False,9
+T05,dev,E check only,1364.0,1407.5,False,True,False,False,0
+T05,dev,F clean + check,1407.5,1407.5,True,False,True,False,9
+T05,dev,G check + repair,1407.5,1407.5,True,False,True,False,9
+T05,dev,H clean + check + repair,1407.5,1407.5,True,False,True,False,9
+T06,test,A baseline,3,4,False,False,False,True,0
+T06,test,B trim only,4,4,True,False,True,False,3
+T06,test,C numeric only,3,4,False,False,False,True,8
+T06,test,D clean both,4,4,True,False,True,False,11
+T06,test,E check only,3,4,False,True,False,False,0
+T06,test,F clean + check,4,4,True,False,True,False,11
+T06,test,G check + repair,4,4,True,False,True,False,11
+T06,test,H clean + check + repair,4,4,True,False,True,False,11
+T07,test,A baseline,,5810,False,False,False,True,0
+T07,test,B trim only,3079.0,5810,False,False,False,True,5
+T07,test,C numeric only,2731.0,5810,False,False,False,True,8
+T07,test,D clean both,5810.0,5810,True,False,True,False,13
+T07,test,E check only,,5810,False,True,False,False,0
+T07,test,F clean + check,5810.0,5810,True,False,True,False,13
+T07,test,G check + repair,5810.0,5810,True,False,True,False,13
+T07,test,H clean + check + repair,5810.0,5810,True,False,True,False,13
+T08,test,A baseline,,1518.5,False,False,False,True,0
+T08,test,B trim only,1431.5,1518.5,False,False,False,True,5
+T08,test,C numeric only,1605.5,1518.5,False,False,False,True,6
+T08,test,D clean both,1518.5,1518.5,True,False,True,False,11
+T08,test,E check only,,1518.5,False,True,False,False,0
+T08,test,F clean + check,1518.5,1518.5,True,False,True,False,11
+T08,test,G check + repair,1518.5,1518.5,True,False,True,False,11
+T08,test,H clean + check + repair,1518.5,1518.5,True,False,True,False,11
+T09,test,A baseline,2,4,False,False,False,True,0
+T09,test,B trim only,4,4,True,False,True,False,4
+T09,test,C numeric only,2,4,False,False,False,True,5
+T09,test,D clean both,4,4,True,False,True,False,9
+T09,test,E check only,2,4,False,True,False,False,0
+T09,test,F clean + check,4,4,True,False,True,False,9
+T09,test,G check + repair,4,4,True,False,True,False,9
+T09,test,H clean + check + repair,4,4,True,False,True,False,9
+T10,test,A baseline,,6254,False,False,False,True,0
+T10,test,B trim only,1433.0,6254,False,False,False,True,5
+T10,test,C numeric only,3127.0,6254,False,False,False,True,4
+T10,test,D clean both,6254.0,6254,True,False,True,False,9
+T10,test,E check only,,6254,False,True,False,False,0
+T10,test,F clean + check,6254.0,6254,True,False,True,False,9
+T10,test,G check + repair,6254.0,6254,True,False,True,False,9
+T10,test,H clean + check + repair,6254.0,6254,True,False,True,False,9
+T11,test,A baseline,1499.0,1629.5,False,False,False,True,0
+T11,test,B trim only,1499.0,1629.5,False,False,False,True,3
+T11,test,C numeric only,1629.5,1629.5,True,False,True,False,10
+T11,test,D clean both,1629.5,1629.5,True,False,True,False,13
+T11,test,E check only,1499.0,1629.5,False,True,False,False,0
+T11,test,F clean + check,1629.5,1629.5,True,False,True,False,13
+T11,test,G check + repair,1629.5,1629.5,True,False,True,False,13
+T11,test,H clean + check + repair,1629.5,1629.5,True,False,True,False,13
+T12,test,A baseline,2,4,False,False,False,True,0
+T12,test,B trim only,4,4,True,False,True,False,3
+T12,test,C numeric only,2,4,False,False,False,True,5
+T12,test,D clean both,4,4,True,False,True,False,8
+T12,test,E check only,2,4,False,True,False,False,0
+T12,test,F clean + check,4,4,True,False,True,False,8
+T12,test,G check + repair,4,4,True,False,True,False,8
+T12,test,H clean + check + repair,4,4,True,False,True,False,8
+T13,test,A baseline,1631.0,6698,False,False,False,True,0
+T13,test,B trim only,3349.0,6698,False,False,False,True,3
+T13,test,C numeric only,4980.0,6698,False,False,False,True,4
+T13,test,D clean both,6698.0,6698,True,False,True,False,7
+T13,test,E check only,1631.0,6698,False,True,False,False,0
+T13,test,F clean + check,6698.0,6698,True,False,True,False,7
+T13,test,G check + repair,6698.0,6698,True,False,True,False,7
+T13,test,H clean + check + repair,6698.0,6698,True,False,True,False,7
+T14,test,A baseline,1697.0,1740.5,False,False,False,True,0
+T14,test,B trim only,1726.0,1740.5,False,False,False,True,4
+T14,test,C numeric only,1740.5,1740.5,True,False,True,False,4
+T14,test,D clean both,1740.5,1740.5,True,False,True,False,8
+T14,test,E check only,1697.0,1740.5,False,True,False,False,0
+T14,test,F clean + check,1740.5,1740.5,True,False,True,False,8
+T14,test,G check + repair,1740.5,1740.5,True,False,True,False,8
+T14,test,H clean + check + repair,1740.5,1740.5,True,False,True,False,8
+T15,test,A baseline,4,4,True,False,True,False,0
+T15,test,B trim only,4,4,True,False,True,False,3
+T15,test,C numeric only,4,4,True,False,True,False,5
+T15,test,D clean both,4,4,True,False,True,False,8
+T15,test,E check only,4,4,True,False,True,False,0
+T15,test,F clean + check,4,4,True,False,True,False,8
+T15,test,G check + repair,4,4,True,False,True,False,0
+T15,test,H clean + check + repair,4,4,True,False,True,False,8
+T16,test,A baseline,3658.0,7142,False,False,False,True,0
+T16,test,B trim only,5313.0,7142,False,False,False,True,3
+T16,test,C numeric only,5487.0,7142,False,False,False,True,3
+T16,test,D clean both,7142.0,7142,True,False,True,False,6
+T16,test,E check only,3658.0,7142,False,True,False,False,0
+T16,test,F clean + check,7142.0,7142,True,False,True,False,6
+T16,test,G check + repair,7142.0,7142,True,False,True,False,6
+T16,test,H clean + check + repair,7142.0,7142,True,False,True,False,6
+T17,test,A baseline,1808.0,1851.5,False,False,False,True,0
+T17,test,B trim only,1851.5,1851.5,True,False,True,False,4
+T17,test,C numeric only,1808.0,1851.5,False,False,False,True,7
+T17,test,D clean both,1851.5,1851.5,True,False,True,False,11
+T17,test,E check only,1808.0,1851.5,False,True,False,False,0
+T17,test,F clean + check,1851.5,1851.5,True,False,True,False,11
+T17,test,G check + repair,1851.5,1851.5,True,False,True,False,11
+T17,test,H clean + check + repair,1851.5,1851.5,True,False,True,False,11
+T18,test,A baseline,3,4,False,False,False,True,0
+T18,test,B trim only,4,4,True,False,True,False,3
+T18,test,C numeric only,3,4,False,False,False,True,5
+T18,test,D clean both,4,4,True,False,True,False,8
+T18,test,E check only,3,4,False,True,False,False,0
+T18,test,F clean + check,4,4,True,False,True,False,8
+T18,test,G check + repair,4,4,True,False,True,False,8
+T18,test,H clean + check + repair,4,4,True,False,True,False,8
+T19,test,A baseline,3880.0,7586,False,False,False,True,0
+T19,test,B trim only,7586.0,7586,True,False,True,False,6
+T19,test,C numeric only,3880.0,7586,False,False,False,True,3
+T19,test,D clean both,7586.0,7586,True,False,True,False,9
+T19,test,E check only,3880.0,7586,False,True,False,False,0
+T19,test,F clean + check,7586.0,7586,True,False,True,False,9
+T19,test,G check + repair,7586.0,7586,True,False,True,False,9
+T19,test,H clean + check + repair,7586.0,7586,True,False,True,False,9
+T20,test,A baseline,,1962.5,False,False,False,True,0
+T20,test,B trim only,2093.0,1962.5,False,False,False,True,4
+T20,test,C numeric only,1919.0,1962.5,False,False,False,True,6
+T20,test,D clean both,1962.5,1962.5,True,False,True,False,10
+T20,test,E check only,,1962.5,False,True,False,False,0
+T20,test,F clean + check,1962.5,1962.5,True,False,True,False,10
+T20,test,G check + repair,1962.5,1962.5,True,False,True,False,10
+T20,test,H clean + check + repair,1962.5,1962.5,True,False,True,False,10
