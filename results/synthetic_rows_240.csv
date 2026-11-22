@@ -1,0 +1,241 @@
+task_id,split,kind,target_region,row_number,region,sales,expected_answer
+T01,dev,total,North,1,North,"$1,100",4922
+T01,dev,total,North,2, South ,"1,129",4922
+T01,dev,total,North,3,East,1158,4922
+T01,dev,total,North,4,North,"1,187",4922
+T01,dev,total,North,5,South,"$1,216",4922
+T01,dev,total,North,6, East ,1245,4922
+T01,dev,total,North,7, North ,"$1,274",4922
+T01,dev,total,North,8,South,1303,4922
+T01,dev,total,North,9, East ,1332,4922
+T01,dev,total,North,10,North,"1,361",4922
+T01,dev,total,North,11,South,1390,4922
+T01,dev,total,North,12, East ,"1,419",4922
+T02,dev,mean,South,1, North ,1137,1296.5
+T02,dev,mean,South,2, South ,1166,1296.5
+T02,dev,mean,South,3,East,1195,1296.5
+T02,dev,mean,South,4,North,1224,1296.5
+T02,dev,mean,South,5, South ,"$1,253",1296.5
+T02,dev,mean,South,6,East,1282,1296.5
+T02,dev,mean,South,7,North,1311,1296.5
+T02,dev,mean,South,8,South,"1,340",1296.5
+T02,dev,mean,South,9,East,1369,1296.5
+T02,dev,mean,South,10,North,"1,398",1296.5
+T02,dev,mean,South,11,South,1427,1296.5
+T02,dev,mean,South,12,East,1456,1296.5
+T03,dev,count,East,1,North,1174,4
+T03,dev,count,East,2,South,"1,203",4
+T03,dev,count,East,3, East ,"$1,232",4
+T03,dev,count,East,4, North ,"1,261",4
+T03,dev,count,East,5, South ,1290,4
+T03,dev,count,East,6,East,1319,4
+T03,dev,count,East,7,North,"$1,348",4
+T03,dev,count,East,8,South,"1,377",4
+T03,dev,count,East,9, East ,1406,4
+T03,dev,count,East,10,North,"1,435",4
+T03,dev,count,East,11, South ,"$1,464",4
+T03,dev,count,East,12,East,"1,493",4
+T04,dev,total,North,1, North ,1211,5366
+T04,dev,total,North,2, South ,"1,240",5366
+T04,dev,total,North,3, East ,"$1,269",5366
+T04,dev,total,North,4, North ,"1,298",5366
+T04,dev,total,North,5, South ,1327,5366
+T04,dev,total,North,6, East ,1356,5366
+T04,dev,total,North,7, North ,1385,5366
+T04,dev,total,North,8,South,"1,414",5366
+T04,dev,total,North,9,East,1443,5366
+T04,dev,total,North,10, North ,"1,472",5366
+T04,dev,total,North,11,South,1501,5366
+T04,dev,total,North,12, East ,"1,530",5366
+T05,dev,mean,South,1,North,"$1,248",1407.5
+T05,dev,mean,South,2,South,1277,1407.5
+T05,dev,mean,South,3, East ,1306,1407.5
+T05,dev,mean,South,4,North,1335,1407.5
+T05,dev,mean,South,5, South ,"$1,364",1407.5
+T05,dev,mean,South,6, East ,1393,1407.5
+T05,dev,mean,South,7,North,"$1,422",1407.5
+T05,dev,mean,South,8,South,1451,1407.5
+T05,dev,mean,South,9,East,1480,1407.5
+T05,dev,mean,South,10, North ,1509,1407.5
+T05,dev,mean,South,11,South,"$1,538",1407.5
+T05,dev,mean,South,12,East,"1,567",1407.5
+T06,test,count,East,1,North,"$1,285",4
+T06,test,count,East,2,South,"1,314",4
+T06,test,count,East,3,East,"$1,343",4
+T06,test,count,East,4, North ,"1,372",4
+T06,test,count,East,5, South ,"$1,401",4
+T06,test,count,East,6, East ,1430,4
+T06,test,count,East,7,North,1459,4
+T06,test,count,East,8,South,1488,4
+T06,test,count,East,9,East,"$1,517",4
+T06,test,count,East,10,North,"1,546",4
+T06,test,count,East,11,South,"$1,575",4
+T06,test,count,East,12,East,1604,4
+T07,test,total,North,1,North,"$1,322",5810
+T07,test,total,North,2,South,"1,351",5810
+T07,test,total,North,3,East,"$1,380",5810
+T07,test,total,North,4,North,"1,409",5810
+T07,test,total,North,5,South,1438,5810
+T07,test,total,North,6, East ,1467,5810
+T07,test,total,North,7, North ,1496,5810
+T07,test,total,North,8,South,"1,525",5810
+T07,test,total,North,9, East ,"$1,554",5810
+T07,test,total,North,10, North ,1583,5810
+T07,test,total,North,11, South ,"$1,612",5810
+T07,test,total,North,12,East,"1,641",5810
+T08,test,mean,South,1, North ,"$1,359",1518.5
+T08,test,mean,South,2, South ,1388,1518.5
+T08,test,mean,South,3,East,"$1,417",1518.5
+T08,test,mean,South,4, North ,1446,1518.5
+T08,test,mean,South,5, South ,1475,1518.5
+T08,test,mean,South,6,East,1504,1518.5
+T08,test,mean,South,7,North,1533,1518.5
+T08,test,mean,South,8,South,"1,562",1518.5
+T08,test,mean,South,9, East ,"$1,591",1518.5
+T08,test,mean,South,10,North,"1,620",1518.5
+T08,test,mean,South,11,South,"$1,649",1518.5
+T08,test,mean,South,12,East,1678,1518.5
+T09,test,count,East,1,North,"$1,396",4
+T09,test,count,East,2,South,"1,425",4
+T09,test,count,East,3,East,1454,4
+T09,test,count,East,4, North ,"1,483",4
+T09,test,count,East,5,South,"$1,512",4
+T09,test,count,East,6, East ,1541,4
+T09,test,count,East,7,North,"$1,570",4
+T09,test,count,East,8, South ,1599,4
+T09,test,count,East,9, East ,1628,4
+T09,test,count,East,10,North,1657,4
+T09,test,count,East,11,South,1686,4
+T09,test,count,East,12,East,1715,4
+T10,test,total,North,1, North ,1433,6254
+T10,test,total,North,2, South ,1462,6254
+T10,test,total,North,3, East ,1491,6254
+T10,test,total,North,4,North,"1,520",6254
+T10,test,total,North,5,South,1549,6254
+T10,test,total,North,6,East,1578,6254
+T10,test,total,North,7,North,"$1,607",6254
+T10,test,total,North,8,South,"1,636",6254
+T10,test,total,North,9,East,1665,6254
+T10,test,total,North,10, North ,"1,694",6254
+T10,test,total,North,11,South,1723,6254
+T10,test,total,North,12, East ,1752,6254
+T11,test,mean,South,1,North,"$1,470",1629.5
+T11,test,mean,South,2,South,1499,1629.5
+T11,test,mean,South,3,East,"$1,528",1629.5
+T11,test,mean,South,4,North,"1,557",1629.5
+T11,test,mean,South,5,South,"$1,586",1629.5
+T11,test,mean,South,6, East ,"1,615",1629.5
+T11,test,mean,South,7,North,"$1,644",1629.5
+T11,test,mean,South,8,South,"1,673",1629.5
+T11,test,mean,South,9, East ,"$1,702",1629.5
+T11,test,mean,South,10, North ,"1,731",1629.5
+T11,test,mean,South,11,South,"$1,760",1629.5
+T11,test,mean,South,12,East,1789,1629.5
+T12,test,count,East,1,North,1507,4
+T12,test,count,East,2,South,1536,4
+T12,test,count,East,3,East,1565,4
+T12,test,count,East,4,North,1594,4
+T12,test,count,East,5,South,"$1,623",4
+T12,test,count,East,6, East ,1652,4
+T12,test,count,East,7,North,"$1,681",4
+T12,test,count,East,8,South,"1,710",4
+T12,test,count,East,9,East,"$1,739",4
+T12,test,count,East,10, North ,"1,768",4
+T12,test,count,East,11,South,1797,4
+T12,test,count,East,12, East ,1826,4
+T13,test,total,North,1,North,"$1,544",6698
+T13,test,total,North,2,South,1573,6698
+T13,test,total,North,3,East,"$1,602",6698
+T13,test,total,North,4,North,1631,6698
+T13,test,total,North,5,South,1660,6698
+T13,test,total,North,6,East,1689,6698
+T13,test,total,North,7, North ,1718,6698
+T13,test,total,North,8,South,1747,6698
+T13,test,total,North,9,East,1776,6698
+T13,test,total,North,10,North,"1,805",6698
+T13,test,total,North,11, South ,1834,6698
+T13,test,total,North,12, East ,"1,863",6698
+T14,test,mean,South,1, North ,1581,1740.5
+T14,test,mean,South,2, South ,1610,1740.5
+T14,test,mean,South,3,East,1639,1740.5
+T14,test,mean,South,4, North ,"1,668",1740.5
+T14,test,mean,South,5,South,1697,1740.5
+T14,test,mean,South,6,East,1726,1740.5
+T14,test,mean,South,7,North,"$1,755",1740.5
+T14,test,mean,South,8,South,"1,784",1740.5
+T14,test,mean,South,9,East,1813,1740.5
+T14,test,mean,South,10,North,"1,842",1740.5
+T14,test,mean,South,11, South ,1871,1740.5
+T14,test,mean,South,12,East,1900,1740.5
+T15,test,count,East,1,North,1618,4
+T15,test,count,East,2,South,1647,4
+T15,test,count,East,3,East,1676,4
+T15,test,count,East,4,North,"1,705",4
+T15,test,count,East,5,South,"$1,734",4
+T15,test,count,East,6,East,1763,4
+T15,test,count,East,7, North ,1792,4
+T15,test,count,East,8, South ,1821,4
+T15,test,count,East,9,East,"$1,850",4
+T15,test,count,East,10, North ,"1,879",4
+T15,test,count,East,11,South,"$1,908",4
+T15,test,count,East,12,East,1937,4
+T16,test,total,North,1, North ,1655,7142
+T16,test,total,North,2, South ,1684,7142
+T16,test,total,North,3,East,"$1,713",7142
+T16,test,total,North,4,North,1742,7142
+T16,test,total,North,5,South,"$1,771",7142
+T16,test,total,North,6,East,1800,7142
+T16,test,total,North,7,North,"$1,829",7142
+T16,test,total,North,8,South,1858,7142
+T16,test,total,North,9,East,1887,7142
+T16,test,total,North,10,North,1916,7142
+T16,test,total,North,11,South,1945,7142
+T16,test,total,North,12, East ,1974,7142
+T17,test,mean,South,1,North,"$1,692",1851.5
+T17,test,mean,South,2,South,1721,1851.5
+T17,test,mean,South,3, East ,"$1,750",1851.5
+T17,test,mean,South,4,North,"1,779",1851.5
+T17,test,mean,South,5,South,1808,1851.5
+T17,test,mean,South,6,East,"1,837",1851.5
+T17,test,mean,South,7,North,"$1,866",1851.5
+T17,test,mean,South,8,South,1895,1851.5
+T17,test,mean,South,9, East ,1924,1851.5
+T17,test,mean,South,10,North,"1,953",1851.5
+T17,test,mean,South,11, South ,1982,1851.5
+T17,test,mean,South,12, East ,"2,011",1851.5
+T18,test,count,East,1, North ,1729,4
+T18,test,count,East,2,South,"1,758",4
+T18,test,count,East,3,East,1787,4
+T18,test,count,East,4,North,"1,816",4
+T18,test,count,East,5,South,"$1,845",4
+T18,test,count,East,6,East,1874,4
+T18,test,count,East,7,North,1903,4
+T18,test,count,East,8, South ,1932,4
+T18,test,count,East,9,East,1961,4
+T18,test,count,East,10,North,"1,990",4
+T18,test,count,East,11,South,2019,4
+T18,test,count,East,12, East ,"2,048",4
+T19,test,total,North,1, North ,1766,7586
+T19,test,total,North,2, South ,1795,7586
+T19,test,total,North,3,East,"$1,824",7586
+T19,test,total,North,4,North,1853,7586
+T19,test,total,North,5,South,1882,7586
+T19,test,total,North,6, East ,"1,911",7586
+T19,test,total,North,7, North ,1940,7586
+T19,test,total,North,8, South ,1969,7586
+T19,test,total,North,9, East ,"$1,998",7586
+T19,test,total,North,10,North,2027,7586
+T19,test,total,North,11,South,2056,7586
+T19,test,total,North,12,East,2085,7586
+T20,test,mean,South,1,North,1803,1962.5
+T20,test,mean,South,2,South,"1,832",1962.5
+T20,test,mean,South,3, East ,1861,1962.5
+T20,test,mean,South,4,North,"1,890",1962.5
+T20,test,mean,South,5,South,"$1,919",1962.5
+T20,test,mean,South,6, East ,1948,1962.5
+T20,test,mean,South,7,North,1977,1962.5
+T20,test,mean,South,8,South,"2,006",1962.5
+T20,test,mean,South,9,East,"$2,035",1962.5
+T20,test,mean,South,10,North,"2,064",1962.5
+T20,test,mean,South,11, South ,2093,1962.5
+T20,test,mean,South,12, East ,2122,1962.5
